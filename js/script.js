@@ -40,26 +40,26 @@ let progress = setInterval(() => {
 
 // =====================================================================================
 
-let left = 0;
+// let left = 0;
 
-function autoSlider() {
-  let timer = setTimeout(function () {
-    let sliderItems = document.querySelector('.testimonials_items');
-    left = left - 400;
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-      left = left - 380;
-    } else if (window.matchMedia("(min-width: 1140px)").matches) {
-      left = left - 340;
-    } else if (window.matchMedia("(min-width: 960px)").matches) {
-      left = left - 10;
-    }
-    if (left < -2400) {
-      left = 0;
-      clearTimeout(timer);
-    }
-    sliderItems.style.left = left + 'px';
-    autoSlider();
-  }, 3000);
-}
+// function autoSlider() {
+//   let timer = setTimeout(function () {
+//     let sliderItems = document.querySelector('.testimonials_items');
+//     left = left - 400;
+//     if (window.matchMedia("(min-width: 1200px)").matches) {
+//       left = left - 380;
+//     } else if (window.matchMedia("(min-width: 1140px)").matches) {
+//       left = left - 340;
+//     } else if (window.matchMedia("(min-width: 960px)").matches) {
+//       left = left - 10;
+//     }
+//     if (left < -2400) {
+//       left = 0;
+//       clearTimeout(timer);
+//     }
+//     sliderItems.style.left = left + 'px';
+//     autoSlider();
+//   }, 3000);
+// }
 
-autoSlider();
+// autoSlider();
